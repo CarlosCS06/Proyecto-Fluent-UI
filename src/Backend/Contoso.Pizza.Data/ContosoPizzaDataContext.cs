@@ -1,4 +1,4 @@
-﻿using Contoso.Pizza.Data.Configutations;
+using Contoso.Pizza.Data.Configutations;
 using Contoso.Pizza.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using DM = Contoso.Pizza.Data.Models;
@@ -9,6 +9,7 @@ public class ContosoPizzaDataContext : DbContext
     public DbSet<Sauce> Sauces { get; set; }
     public DbSet<DM.Pizza> Pizza { get; set; }
     public DbSet<Topping> Toppings { get; set; }
+    public DbSet<OtherFood> OtherFoods { get; set; }
 
     public ContosoPizzaDataContext(DbContextOptions<ContosoPizzaDataContext> options) 
         : base(options) { }
@@ -20,5 +21,6 @@ public class ContosoPizzaDataContext : DbContext
         new PizzaEntityConfiguration().Configure(modelBuilder.Entity<DM.Pizza>());
         new ToppingEntityConfiguration().Configure(modelBuilder.Entity<Topping>());
         new PizzaToppingEntityConfigration().Configure(modelBuilder.Entity<PizzaTopping>());
+        new OtherFoodEntityConfiguration().Configure(modelBuilder.Entity<OtherFood>());
     }
 }

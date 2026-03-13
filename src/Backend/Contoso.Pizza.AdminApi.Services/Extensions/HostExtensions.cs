@@ -1,5 +1,6 @@
-﻿using Contoso.Pizza.Data;
+using Contoso.Pizza.Data;
 using Contoso.Pizza.Data.Initializers;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -13,7 +14,7 @@ public static class HostExtensions
         {
             var services = scope.ServiceProvider;
             var context = services.GetRequiredService<ContosoPizzaDataContext>();
-            context.Database.EnsureCreated();
+            context.Database.Migrate();
             DbInitializer.Initialize(context);
         }
     }

@@ -1,4 +1,4 @@
-﻿using Contoso.Pizza.AdminApi.Models;
+using Contoso.Pizza.AdminApi.Models;
 using Contoso.Pizza.AdminUI.Services.Contracts;
 using Microsoft.AspNetCore.Components;
 using Microsoft.FluentUI.AspNetCore.Components;

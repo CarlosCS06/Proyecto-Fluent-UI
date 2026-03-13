@@ -1,4 +1,4 @@
-﻿@page "/toppings"
+@page "/toppings"
 @inherits BasePage
 @rendermode InteractiveServer
 
@@ -8,11 +8,11 @@
     <FluentBreadcrumb>
         <FluentBreadcrumbItem Href="/">
             Home
-            <FluentIcon Value="@(new Icons.Regular.Size20.Home())" Color="@Color.Neutral" Slot="start" />
+            <FluentIcon Value="@(new Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size20.Home())" Color="@Color.Neutral" Slot="start" />
         </FluentBreadcrumbItem>
         <FluentBreadcrumbItem>
             Toppings
-            <FluentIcon Value="@(new Icons.Regular.Size20.BowlChopsticks())" Color="@Color.Neutral" Slot="start" />
+            <FluentIcon Value="@(new Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size20.BowlChopsticks())" Color="@Color.Neutral" Slot="start" />
         </FluentBreadcrumbItem>
     </FluentBreadcrumb>
 </div>
@@ -31,7 +31,7 @@ else
 {
     <div style="border-top:1px solid lightgrey;margin-bottom:3em">
         <FluentToolbar Style="margin-top:0;padding-top:0">
-            <FluentButton Appearance="Appearance.Stealth" IconStart="@(new Icons.Regular.Size12.Add())" @onclick="OnAddNewToppingClick">Add a topping</FluentButton>
+            <FluentButton Appearance="Appearance.Stealth" IconStart="@(new Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size12.Add())" @onclick="OnAddNewToppingClick">Add a topping</FluentButton>
         </FluentToolbar>
     </div>
 
@@ -43,7 +43,7 @@ else
         <PropertyColumn Title="Created" Property="@(c => c!.Created)" Format="MMM dd, yyyy" Sortable="true" Align=Align.Start />
         <PropertyColumn Title="Modified" Property="@(c => c!.Modified)" Format="MMM dd, yyyy" Sortable="true" Align=Align.Start />
         <TemplateColumn Title="Action">
-            <FluentIcon Value="@(new Icons.Regular.Size20.Delete())" Title="Delete sauce"
+            <FluentIcon Value="@(new Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size20.Delete())" Title="Delete sauce"
                         Color="Color.Error" Style="cursor:pointer"
                         @onclick="@(() => OnDeleteToppingClick(context))" />
         </TemplateColumn>

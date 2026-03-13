@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components;
 using Microsoft.FluentUI.AspNetCore.Components;
 
 namespace Contoso.Pizza.AdminUI.Components.Pages;
@@ -26,7 +26,7 @@ public class BasePage : ComponentBase
             {
                 Title = title,
                 MarkupMessage = new MarkupString(message),
-                Icon = new Icons.Regular.Size24.QuestionCircle(),
+                Icon = new Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24.QuestionCircle(),
                 IconColor = Color.Error,
             },
             PrimaryAction = "Ok",

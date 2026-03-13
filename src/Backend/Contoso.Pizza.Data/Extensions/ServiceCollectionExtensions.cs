@@ -1,4 +1,4 @@
-﻿using Contoso.Pizza.Data.Contracts;
+using Contoso.Pizza.Data.Contracts;
 using Contoso.Pizza.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +26,7 @@ public static class ServiceCollectionExtensions
         services.AddScoped<ISauceRepository, SauceRepository>();
         services.AddScoped<IToppingRepository, ToppingRepository>();
         services.AddScoped<IPizzaRepository, PizzaRepository>();
+        services.AddScoped<IOtherFoodRepository, OtherFoodRepository>();
 
         return services;
     }

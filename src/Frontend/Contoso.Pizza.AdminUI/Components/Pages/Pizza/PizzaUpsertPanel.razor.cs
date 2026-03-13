@@ -1,5 +1,6 @@
-﻿using Contoso.Pizza.AdminApi.Models;
+using Contoso.Pizza.AdminApi.Models;
 using Contoso.Pizza.AdminUI.Services;
+using Contoso.Pizza.AdminUI.Services.Contracts;
 using Microsoft.AspNetCore.Components;
 
 namespace Contoso.Pizza.AdminUI.Components.Pages.Pizza;
@@ -7,10 +8,10 @@ namespace Contoso.Pizza.AdminUI.Components.Pages.Pizza;
 public partial class PizzaUpsertPanel
 {
     [Inject]
-    SauceService SauceService { get; set; } = default!;
+    ISauceService SauceService { get; set; } = default!;
     
     [Inject]
-    ToppingService ToppingService { get; set; } = default!;
+    IToppingService ToppingService { get; set; } = default!;
     
     [Parameter]
     public PizzaEntity Content { get; set; } = default!;
@@ -21,11 +22,26 @@ public partial class PizzaUpsertPanel
 
     protected override async Task OnInitializedAsync()
     {
-        isBusy = true;        
-        _sauces = await SauceService.GetAllSaucesAsync();
-        Content.Sauce = _sauces.FirstOrDefault();
-        _toppings = (await ToppingService.GetAllToppingsAsync()).ToList();
-        isBusy = false;
+        try
+        {
+            isBusy = true;        
+            _sauces = await SauceService.GetAllSaucesAsync() ?? Array.Empty<SauceEntity>();
+            
+            if (Content.Sauce == null && _sauces.Any())
+            {
+                Content.Sauce = _sauces.FirstOrDefault();
+            }
+            
+            _toppings = (await ToppingService.GetAllToppingsAsync())?.ToList() ?? new List<ToppingEntity>();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error initializing PizzaUpsertPanel: {ex.Message}");
+        }
+        finally
+        {
+            isBusy = false;
+        }
     }
 
     protected void OnToppingSelected(ToppingEntity item, bool selected)

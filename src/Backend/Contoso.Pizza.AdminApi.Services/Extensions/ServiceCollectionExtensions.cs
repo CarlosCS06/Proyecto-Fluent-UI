@@ -1,4 +1,4 @@
-﻿using Contoso.Pizza.AdminApi.Services.Contracts;
+using Contoso.Pizza.AdminApi.Services.Contracts;
 using Contoso.Pizza.Data.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +17,7 @@ namespace Contoso.Pizza.AdminApi.Services.Extensions
             services.AddScoped<ISauceService, SauceService>();
             services.AddScoped<IToppingService, ToppingService>();
             services.AddScoped<IPizzaService, PizzaService>();
+            services.AddScoped<IOtherFoodService, OtherFoodService>();
             return services;
         }
     }

@@ -1,4 +1,4 @@
-﻿@implements IDialogContentComponent<PizzaEntity>
+@implements IDialogContentComponent<PizzaEntity>
 @rendermode InteractiveServer
 
 <FluentDialogBody>
@@ -65,7 +65,7 @@
                 <FluentSpacer Width="10" />
                 <FluentLabel Weight="FontWeight.Bold">Sauce</FluentLabel>
                 <FluentSpacer Width="10" />
-                <FluentLabel>@Content.Sauce!.Name</FluentLabel>
+                <FluentLabel>@(Content.Sauce?.Name ?? "No sauce selected")</FluentLabel>
                 <FluentSpacer Width="10" />
                 <FluentLabel Weight="FontWeight.Bold">Topping(s)</FluentLabel>
                 <FluentSpacer Width="10" />
@@ -73,7 +73,7 @@
                     @foreach (var topping in Content.Toppings)
                     {
                         <FluentStack Orientation="Orientation.Horizontal">
-                            <FluentIcon Value="@(new Icons.Filled.Size24.CheckboxChecked())" Color="Color.Accent" />
+                            <FluentIcon Value="@(new Microsoft.FluentUI.AspNetCore.Components.Icons.Filled.Size24.CheckboxChecked())" Color="Color.Accent" />
                             <FluentLabel>@topping.Name</FluentLabel>
                         </FluentStack>
                             
