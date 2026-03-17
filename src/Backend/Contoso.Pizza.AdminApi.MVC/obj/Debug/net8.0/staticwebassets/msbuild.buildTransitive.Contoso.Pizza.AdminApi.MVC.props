@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Contoso.Pizza.AdminApi.MVC.props" />
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.AdminApi.Models\bin\Debug\net8.0\Contoso.Pizza.AdminApi.Models.deps.json
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.AdminApi.Models\bin\Debug\net8.0\Contoso.Pizza.AdminApi.Models.dll
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.AdminApi.Models\bin\Debug\net8.0\Contoso.Pizza.AdminApi.Models.pdb
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.AdminApi.Models\obj\Debug\net8.0\Contoso.Pizza.AdminApi.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.AdminApi.Models\obj\Debug\net8.0\Contoso.Pizza.AdminApi.Models.AssemblyInfoInputs.cache
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.AdminApi.Models\obj\Debug\net8.0\Contoso.Pizza.AdminApi.Models.AssemblyInfo.cs
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.AdminApi.Models\obj\Debug\net8.0\Contoso.Pizza.AdminApi.Models.csproj.CoreCompileInputs.cache
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.AdminApi.Models\obj\Debug\net8.0\Contoso.Pizza.AdminApi.Models.sourcelink.json
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.AdminApi.Models\obj\Debug\net8.0\Contoso.Pizza.AdminApi.Models.dll
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.AdminApi.Models\obj\Debug\net8.0\refint\Contoso.Pizza.AdminApi.Models.dll
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.AdminApi.Models\obj\Debug\net8.0\Contoso.Pizza.AdminApi.Models.pdb
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.AdminApi.Models\obj\Debug\net8.0\ref\Contoso.Pizza.AdminApi.Models.dll

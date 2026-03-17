@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ochddpe5Muw57Ro3TLffyz9YKnJyhPjRFMz028SfCYU=",
+  "Source": "Contoso.Pizza.AdminApi.MVC",
+  "BasePath": "_content/Contoso.Pizza.AdminApi.MVC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

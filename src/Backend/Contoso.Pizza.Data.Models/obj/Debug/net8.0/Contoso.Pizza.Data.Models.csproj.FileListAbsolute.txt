@@ -1,0 +1,12 @@
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.Data.Models\bin\Debug\net8.0\Contoso.Pizza.Data.Models.deps.json
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.Data.Models\bin\Debug\net8.0\Contoso.Pizza.Data.Models.dll
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.Data.Models\bin\Debug\net8.0\Contoso.Pizza.Data.Models.pdb
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.Data.Models\obj\Debug\net8.0\Contoso.Pizza.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.Data.Models\obj\Debug\net8.0\Contoso.Pizza.Data.Models.AssemblyInfoInputs.cache
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.Data.Models\obj\Debug\net8.0\Contoso.Pizza.Data.Models.AssemblyInfo.cs
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.Data.Models\obj\Debug\net8.0\Contoso.Pizza.Data.Models.csproj.CoreCompileInputs.cache
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.Data.Models\obj\Debug\net8.0\Contoso.Pizza.Data.Models.sourcelink.json
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.Data.Models\obj\Debug\net8.0\Contoso.Pizza.Data.Models.dll
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.Data.Models\obj\Debug\net8.0\refint\Contoso.Pizza.Data.Models.dll
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.Data.Models\obj\Debug\net8.0\Contoso.Pizza.Data.Models.pdb
+C:\Users\Practicas\documents\Proyecto-Fluent-UI\src\Backend\Contoso.Pizza.Data.Models\obj\Debug\net8.0\ref\Contoso.Pizza.Data.Models.dll
