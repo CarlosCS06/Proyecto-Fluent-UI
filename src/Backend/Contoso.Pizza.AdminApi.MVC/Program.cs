@@ -27,6 +27,8 @@ public class Program
 
     private static void ConfigureMvcServices(WebApplication app)
     {
+
+
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
@@ -38,6 +40,8 @@ public class Program
             app.UseHttpsRedirection();
         }
 
+        app.UseRouting();
+        app.UseCors("AllowAll");
         app.UseAuthorization();
 
         app.MapControllers();
@@ -45,6 +49,16 @@ public class Program
 
     private static void AddMvcServices(WebApplicationBuilder builder)
     {
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowAll", policy =>
+            {
+                policy.AllowAnyOrigin()
+                      .AllowAnyMethod()
+                      .AllowAnyHeader();
+            });
+        });
+
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
