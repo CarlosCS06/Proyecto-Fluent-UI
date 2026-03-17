@@ -1,5 +1,7 @@
 
 using Contoso.Pizza.AdminApi.Services.Extensions;
+using Contoso.Pizza.Data.Extensions;
+using Contoso.Pizza.AdminApi.Services.Mappers;
 
 namespace Contoso.Pizza.AdminApi.MVC;
 
@@ -66,7 +68,8 @@ public class Program
 
     private static void AddApplicationServices(WebApplicationBuilder builder)
     {
-        builder.Services.AddContosoPizzaServices(builder.Configuration,
-                                                 builder.Environment.IsProduction());
+        builder.Services.AddRepositories(builder.Configuration);
+        builder.Services.AddBusinessServices();
+        builder.Services.AddAutoMapper(typeof(WarehouseProfile));
     }
 }

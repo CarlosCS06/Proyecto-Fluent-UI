@@ -8,25 +8,12 @@ namespace Contoso.Pizza.Data.Extensions;
 
 public static class ServiceCollectionExtensions
 {
-    public static IServiceCollection AddContosoPizzaData(this IServiceCollection services, 
-        IConfiguration configuration,
-        bool isProduction = true)
+    public static IServiceCollection AddRepositories(this IServiceCollection services, IConfiguration configuration)
     {
-        var contosoPizzaDbConnectionString = configuration["ConnectionStrings:ContosoPizza"];
-
         services.AddDbContext<ContosoPizzaDataContext>(options =>
-        {
-            options.UseSqlite(contosoPizzaDbConnectionString);
-            //If we are not in production, log to console
-            if(!isProduction)
-            {
-                options.LogTo(Console.WriteLine);
-            }
-        });
-        services.AddScoped<ISauceRepository, SauceRepository>();
-        services.AddScoped<IToppingRepository, ToppingRepository>();
-        services.AddScoped<IPizzaRepository, PizzaRepository>();
-        services.AddScoped<IOtherFoodRepository, OtherFoodRepository>();
+            options.UseSqlite(configuration.GetConnectionString("ContosoPizza")));
+
+        services.AddScoped<IProductRepository, ProductRepository>();
 
         return services;
     }
