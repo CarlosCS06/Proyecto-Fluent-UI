@@ -14,7 +14,7 @@ public static class HostExtensions
         {
             var services = scope.ServiceProvider;
             var context = services.GetRequiredService<ContosoPizzaDataContext>();
-            context.Database.Migrate();
+            context.Database.EnsureCreated();
             DbInitializer.Initialize(context);
         }
     }

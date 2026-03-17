@@ -16,7 +16,7 @@ public static class ServiceCollectionExtensions
 
         services.AddDbContext<ContosoPizzaDataContext>(options =>
         {
-            options.UseSqlServer(contosoPizzaDbConnectionString);
+            options.UseSqlite(contosoPizzaDbConnectionString);
             //If we are not in production, log to console
             if(!isProduction)
             {
